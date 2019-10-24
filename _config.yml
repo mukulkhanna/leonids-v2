@@ -6,7 +6,7 @@
 title: John Schrute
 email: john.schrute@loremipsum.com
 description: "My website description"
-url: 'https://mukulkhanna.github.io/leonids-v2'
+url: 'https://mukulkhanna.github.io/leonids-v2' # change this as per your website
 keywords: [""]
 
 #
@@ -56,7 +56,7 @@ owner:
   facebook: #username
   google:
     plus: #username
-    analytics: UA-137794579-1
+    analytics:
     verify:
     ad-client:
     ad-slot:
