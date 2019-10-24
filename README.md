@@ -1,15 +1,15 @@
 # Leonids v2
 
-#### [[Live demo]](http://renyuanz.github.io/leonids) 
+#### [[Live demo]](http://mukulkhanna.github.io/leonids-v2) 
 
 
 Leonids v2 or Leonids 2.0 is a revamped version of the very popular [leonids](http://renyuanz.github.io/leonids) Jekyll Theme.
 
-[](https://user-images.githubusercontent.com/24846546/67464494-ef97a000-f632-11e9-86d8-6eae43428b0b.png)
+![](https://user-images.githubusercontent.com/24846546/67464494-ef97a000-f632-11e9-86d8-6eae43428b0b.png)
 
 The motivation behind creating a revamped version was to improve readability
 of the posts, to add more color and vibrancy to the elegant side bar and to
-provide a 'Projects' page to showcase user projects. 
+provide a 'Projects' page to showcase user projects.
 
 ### More information about Leonids (v1) Jekyll Theme
 
