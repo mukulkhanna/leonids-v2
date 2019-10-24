@@ -18,6 +18,7 @@
       {% for page in site.pages %} {% if page.title %} {% unless page.title == 'Categories' %}
       {% unless page.title == 'Archive' %}
       <li class="nav-item">
+        {{site.url}}
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
       </li>
       {% endunless %}
