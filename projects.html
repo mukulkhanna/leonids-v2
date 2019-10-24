@@ -1,0 +1,29 @@
+---
+layout: page
+title:  Projects
+---
+<div class="tag-list row">
+    {% assign projects = site.projects | sort: 'date' %}
+    {% for project in projects reversed %}
+      <div class="tag-group">
+        <!-- {% capture cat_name %}{{ cat | first }}{% endcapture %} -->
+        <h4 class="tag-group-title"><a href="{{project.url}}">{{project.title}}</a></h4>
+        <div class="project-desc" style="width: 50%; word-wrap:break-word;font-size: 16px;margin-bottom: 20px">
+          {{project.desc}}
+        </div>
+        <div class="row">
+            <img align="left" width="400px" src="{{project.img}}" alt="">
+        </div>
+      </div>
+      <hr style="width:100%">
+    {% endfor %}
+    </div>
+    
+    <style>
+    
+      @media only screen and (max-width: 700px) {
+        .project-desc {
+          width: 100%!important
+        }
+    }
+    </style>

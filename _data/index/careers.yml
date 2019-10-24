@@ -1,0 +1,16 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: Dunder Mifflin
+  link: 
+  project-desc: "Cupidatat commodo nulla laborum ut ipsum fugiat culpa labore esse consequat adipisicing mollit excepteur."
+  project-url: /projects/dunder-mifflin
+  date: May 2017 - Present
+  job: Assistant Regional Manager
+
+- name: Dunder Mifflin
+  link: 
+  project-desc: "Cupidatat commodo nulla laborum ut ipsum fugiat culpa labore esse consequat adipisicing mollit excepteur."
+  project-url: /projects/dunder-mifflin
+  date: May 2015 - May 2017
+  job: Assistant to the Regional Manager
+

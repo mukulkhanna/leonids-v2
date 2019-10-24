@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<a style="border-radius:50%;" class="btn" href= "{{ site.url }}/projects" >
+  <i style="font-size:30px;font-weight: bold" class="fa fa-angle-left"></i>
+</a>
+{% if page.img %}
+<div class="post-image-feature" style="text-align: center;">
+  <img class="feature-image" style="width:50%" src=
+  {% if page.img contains 'https' or page.img contains 'http' %}
+  "{{ page.img }}"
+  {% else %}
+  "{{ site.url }}/img/{{ page.img }}"
+  {% endif %}
+  alt="{{ page.title | escape }} feature image">
+
+</div>
+{% endif %}
+
+<div>
+<div style="margin: 15 auto" id="project">
+  <header class="project-header">
+    <h1 style="margin-bottom: 0px;font-size:29px" title="{{ page.title | escape }}">{{ page.title }}</h1>
+    </span>
+    <span class="post-meta">
+      <span class="post-date">
+        {{ page.datex }}
+      </span>
+    </span>
+  </header>
+
+  <article class="post-content" style="width:85%">
+    {{ content }}
+  </article>
+</div>
+
+{% if site.owner.disqus-shortname and page.comments == true %}
+<div id="disqus_thread"></div>
+{% include disqus.html %}
+{% endif %}
+</div>
+
+<style>
+
+@media only screen and (max-width: 700px) {
+        .feature-image {
+          width: 100%!important
+        }
+    }
+
+</style>

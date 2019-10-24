@@ -1,0 +1,44 @@
+<h3 style="margin-top:1.5%;"><span data-i18n="skills.my_skills">Experience</span></h3>
+
+<div class="archive">
+  <div class="timeline" id="timeline">
+    {% for career in site.data.index.careers %}
+          <div class="archive-title">
+            <div class="archive-year">
+              <!-- <a href="{{ career.link }}">{{ career.name }}</a> - {{ career.job }}  -->
+              {{ career.name }} - {{ career.job }} 
+            </div>
+            <span class="archive-date">
+              {{ career.date }} 
+            </span>
+          </div>
+          <div id="archive-desc">
+            <!-- <img style="margin-left: 2%;display: inline" src="http://192.168.1.7:4000/img/dp2.JPG" width="12%"> -->
+            <!-- Project: <a href="{{career.project-url}}" style="color: black;font-weight: bold">{{career.project-title}}</a> -->
+            {{career.project-desc}}
+          </div>
+          <div id="archive-link">
+            [<a href="{{career.project-url}}">
+              Project webpage
+            </a>] &nbsp;
+            {% if career.github %}
+            <span>
+              [<a href="{{career.github}}">
+                Github
+              </a>]
+            </span>
+            {% endif %}
+          </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+
+<style>
+
+a:hover {
+  text-decoration: under;
+}
+
+</style>

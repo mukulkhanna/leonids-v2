@@ -1,0 +1,70 @@
+{% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
+
+<div class="cover-card table-cell table-middle">
+  {% if author.avatar %}
+  <a href="{{ site.url }}/">
+    <img src="{{ site.url }}/img/{{ author.avatar }}" alt="" class="avatar">
+  </a>
+  {% endif %}
+  <a href="{{ site.url }}/" class="author_name">{{ author.name }}</a>
+  <span class="author_job" style="color: rgb(236, 236, 128)">{{ author.job }}</span>
+  <!-- <span class="author_bio mbm" style="color: #D24585">{{ author.bio }}</span> -->
+  <span class="author_bio mbm" style="color: white">{{ author.bio }}</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="{{ site.url }}/">blog</a>
+      </li>
+      {% for page in site.pages %} {% if page.title %} {% unless page.title == 'Categories' %}
+      {% unless page.title == 'Archive' %}
+      <li class="nav-item">
+        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+      </li>
+      {% endunless %}
+      {% endunless %}
+      {% endif %} {% endfor %}
+
+    </ul>
+  </nav>
+  {% include social-links.html %}
+  <!-- <div style="color: white; font-size:12px;">Subscribe to my newsletter</div> -->
+</div>
+
+<style>
+  .nav-item {
+    color: white;
+  }
+
+ .author_name, .nav-item > a {
+  animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {color: white;}
+      20%   {color: #D24585;}
+      40%  {color: turquoise;}
+      60%  {color: rgb(78, 185, 78);}
+      80% {color: #D24585;}
+      100% {color: white;}
+    }
+
+    @-webkit-keyframes colorchange
+    {
+      0%   {color: white;}
+      20%   {color: #D24585;}
+      40%  {color: turquoise;}
+      60%  {color: rgb(78, 185, 78);}
+      80% {color: #D24585;}
+      100% {color: white;}
+    }
+
+
+.nav-item > a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+</style>

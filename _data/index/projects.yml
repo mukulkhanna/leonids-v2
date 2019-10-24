@@ -1,0 +1,30 @@
+
+- name: URSim
+  descr: "Open Source Simulator for Unmanned Underwater Vehicles using ROS and Unity3D"
+  image: https://media.giphy.com/media/duQk6JJ9viek8btXgD/giphy.gif
+  github: https://github.com/srmauvsoftware/URSim
+  website: http://srmauvsoftware.github.io/URSim
+
+- name: Airline Helpdesk Chatbot
+  descr: "This project involves creating an AI conversationalist chatbot that makes it easy for customers to get flight details, book tickets and manage their bookings." 
+  image: 
+  github: https://github.com/srmauvsoftware/URSim
+
+- name: API train
+  descr: "Open source quote generator REST API." 
+  image: 
+  github: https://github.com/mukulkhanna/api-train
+  website: api-train.herokuapp.com
+
+- name: Visualizations-with-p5js
+  descr: "Visualizing algorithms, sequences, animations and some games using P5.js " 
+  image: 
+  github: https://github.com/mukulkhanna/Visualizations-with-p5js
+  website: https://mukulkhanna.github.io/Visualizations-with-p5js/
+
+- name: Generative Typography
+  descr: "Generative typography using P5.js" 
+  image: 
+  github: https://github.com/mukulkhanna/generative-typography
+  website: https://mukulkhanna.github.io/generative-typography
+

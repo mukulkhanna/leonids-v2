@@ -1,0 +1,6 @@
+# skills section data
+
+label: Ability
+id : cs
+aspects: Python, HTML, CSS, JS, Nodejs, Vuejs
+percentage: 85, 80, 75, 95, 85, 95
